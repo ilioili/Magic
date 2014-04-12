@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="main.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="main.activity.WelcomAnimation"
+            android:theme="@style/Theme.Translucent"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cubes.Cubes2Game">
+        </activity>
+        <activity
+            android:name="cubes.Cubes3Game">
+        </activity>
+        <activity
+            android:name="cubes.Cubes4Game">
+        </activity>
+        <activity
+            android:name="pyramid.Pyramids3Game">
+        </activity>
+        <activity
+            android:name="tomato.TomatosGame">
+        </activity>
+        <activity
+            android:name="potato.Potatos1Game">
+        </activity>
+        <activity
+            android:name="potato.Potatos2Game">
+        </activity>
+        <activity
+            android:name="eggplant.EggplantsGame">
+        </activity>
+        <activity
+            android:name="cucumber.CucumberGame">
+        </activity>
+        <activity
+    		android:name="main.activity.Main">    
+    	</activity>
+    	<activity
+    		android:name="element.ShapeTest">
+    	</activity>
+    </application>
+</manifest>
